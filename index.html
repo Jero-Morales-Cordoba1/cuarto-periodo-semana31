@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>Semana31</title>
+	<style>
+
+		.grande{			
+		     position: absolute;
+			top: 0px;
+			left: 0px;
+			width:0px;
+			height: 0px;
+			background: lime;
+	        color: white;
+			
+
+		}
+		.grande2{			
+		     position: absolute;
+			top: 0px;
+			left: 0px;
+			width:0px;
+			height: 0px;
+			background: lime;
+	        color: white;
+			
+
+		}
+
+		.titu{
+
+			position: absolute;
+			font-family: algerian;
+			top: 20px;
+			left: 500px;
+			width:450px;
+			height: 100px;
+			background: lime;
+			border-radius: 10px; 
+			border: 5px solid black;
+			
+		
+		}
+
+			.neo{
+		    position: absolute;
+			top: 0px;
+			left: 0px;
+			width:0px;
+			height: 0px;
+			background: lime;
+			background: url(neo.jfif);
+			background-size: cover;
+	        color: white;
+	        font-size: 500%;
+			
+		
+		}
+
+			.cua1{
+		    position: absolute;
+			top: 100px;
+			left: 50px;
+			width:250px;
+			height: 200px;
+			background: lime;
+			border-radius: 10px; 
+			border: 5px solid black;
+	        color: white;
+	        font-size: 500%;
+			transition: all 0.5s;
+			
+		
+		}
+
+			.cua2{
+			position: absolute;
+			top: 400px;
+			left: 50px;
+			width: 250px;
+			height: 200px;
+			background: lime;
+			border-radius: 10px; 
+			border: 5px solid black;
+	        color: white;
+	        font-size: 500%;
+		}
+
+		
+	</style>
+</head>
+<body>
+	<div class="grande" id="mu" onmousemove="mostrar()"></div>
+	<div class="grande2" id="mu2" onmousemove="mostrar2()"></div>
+	<div class="titu" id="titu1" onclick="titulo()"><h1><center>CENTRO EDUCATIVO<br>NEOSITEMAS</center></h1></div>
+	<div class="neo" id="ne" ></div>
+	<div class="cua1" id="c1" onclick="cuadro1()" >1---></div>
+	<div class="cua2" id="c2" onclick="cuadro2()">2---></div>
+	<script>
+
+		function titulo(){
+         ne.style.top=150+"px";
+         ne.style.left=500+"px";
+         ne.style.width=450+"px";
+		 ne.style.height=440+"px";
+		 ne.style.border=5+"px solid black";
+		}
+
+        function cuadro1(){
+         mu.style.top=150+"px";
+         mu.style.left=500+"px";
+         mu.style.width=450+"px";
+		 mu.style.height=260+"px";
+		 mu.style.border=5+"px solid black";
+		}
+
+		function cuadro2(){
+         mu2.style.top=150+"px";
+         mu2.style.left=500+"px";
+         mu2.style.width=450+"px";
+		 mu2.style.height=260+"px";
+		 mu2.style.border=5+"px solid black";
+		}
+
+		function mostrar(){
+
+				mu.style.background="purple";
+				mu.innerHTML="Estoy Adentro"
+			}
+
+			function mostrar2(){
+
+				mu2.style.background="blue";
+				mu2.innerHTML="Estoy Adentro"
+			}
+			
+			
+		
+
+		function cerrar(){
+			ne.style.width=0+"px";
+			ne.style.height=0+"px";
+			ne.style.border=0+"px solid black";
+			clearnInterval(crono);
+		}
+		crono=setInterval(cerrar,1000);
+
+		function cerrar2(){
+
+			mu.style.width=0+"px";
+		    mu.style.height=0+"px";
+		    mu.style.border=0+"px solid black";
+			clearnInterval(crono);
+		}
+		crono=setInterval(cerrar2,10000);
+
+		function cerrar3(){
+
+			mu2.style.width=0+"px";
+		    mu2.style.height=0+"px";
+		    mu2.style.border=0+"px solid black";
+			clearnInterval(crono);
+		}
+		crono=setInterval(cerrar3,10000);
+
+	</script>
+</body>
+</html>
